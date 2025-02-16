@@ -44,7 +44,7 @@ const Preview = ({ handleSave }) => {
     }  
   };  
 
-  return (  
+  return ( 
     <div>  
       <h2>Preview Your Resume</h2>  
       <div>  
