@@ -10,7 +10,7 @@ import { updatePersonalInfo, updateErrorMessages } from '../../ReduxManager/data
 //this component renders Personal Info page inside the details filling page.
 function PersonalInfo(props) {
   const personalHeads= useSelector(state => state.dataStore.personalInfo) //this state is used to store personalInfo object of dataStoreSlice.
-console.log("Personal Info Data from Redux:", personalHeads); // ✅ Debugging Step
+
 
   const dispatch = useDispatch();
   const onChangeHandler= (key,value,errorMessage=undefined) =>{

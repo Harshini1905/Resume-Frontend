@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Async thunk to fetch user data
 export const fetchUserData = createAsyncThunk('dataStore/fetchUserData', async (email) => {
-  const response = await axios.get(`http://localhost:5000/api/get-resume/${email}`);
+  const response = await axios.get(`https://resume-backend-2-8p3o.onrender.com/api/get-resume/${email}`);
 
   return response.data;
 });

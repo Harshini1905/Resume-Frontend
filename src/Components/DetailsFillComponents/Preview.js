@@ -30,7 +30,7 @@ const Preview = ({ handleSave }) => {
 
     try {  
       setIsLoading(true);  
-      const response = await axios.post('http://localhost:5000/api/save-resume', resumeData);  
+      const response = await axios.post('https://resume-backend-2-8p3o.onrender.com/api/save-resume', resumeData);  
       if (response.status === 200) {  
         alert('Resume saved successfully!');  
       } else {  

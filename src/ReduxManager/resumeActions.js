@@ -3,7 +3,7 @@ import { updateState } from './dataStoreSlice';
 
 export const fetchResumeData = (email) => async (dispatch) => {
   try {
-    const response = await axios.get(`http://localhost:5000/api/get-resume?email=${email}`);
+    const response = await axios.get(`https://resume-backend-2-8p3o.onrender.com/api/get-resume?email=${email}`);
     dispatch(updateState({ key: 'personalInfo', value: response.data.personalInfo }));
     dispatch(updateState({ key: 'workEx', value: response.data.workEx }));
     dispatch(updateState({ key: 'education', value: response.data.education }));

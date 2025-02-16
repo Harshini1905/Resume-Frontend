@@ -15,7 +15,7 @@ const Login = ({ setIsLoggedIn }) => {
         e.preventDefault(); // Prevent the form from reloading the page
 
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/login', {
+            const response = await axios.post('https://resume-backend-2-8p3o.onrender.com/api/auth/login', {
                 email,
                 password,
             });

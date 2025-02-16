@@ -13,7 +13,7 @@ function Signup() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/signup', { 
+            const response = await axios.post('https://resume-backend-2-8p3o.onrender.com/api/auth/signup', { 
                 username, 
                 email, 
                 password, 
