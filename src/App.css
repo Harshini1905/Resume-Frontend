@@ -1,0 +1,190 @@
+
+.no-text-decoration{
+  text-decoration: none;
+  
+}
+.list-item{
+  padding:10px;
+  font-size: 20px;
+}
+.modal{
+  display: none;
+}
+
+.block{
+  display: block;
+  background-color: rgba(50,50,50,0.5);
+}
+.resume{
+  margin:20px;
+  margin-left: 50px;
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 50px 20px;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar li {
+  display: block;
+  border: 1px solid #594fc7;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* Links on mouse-over */
+.sidebar li:hover{
+  background-color:rgba(147, 197, 225, 0.773);
+  ;
+}
+
+/* Page content.  */
+div.content {
+  padding: 1px 16px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 992px) {
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding: 1px;
+    /* display: none; */
+    /* height:80px; */
+  }
+
+  .sidebar li {
+    float: left;
+    font-size: 20px;
+  }
+  div.content {margin-left: 0;
+              margin-top: 30px;
+              background-color: #f7f7f7;}
+  .resume{margin: 1px;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar li {
+    text-align: center;
+    float: none;
+    font-size: 12px;
+  }
+}
+
+.input-style:focus {
+  border: 5px solid #007bff;
+  outline: none;
+}
+
+
+.input-style{
+  width:100%;
+  border:1px solid rgb(133, 183, 214);
+  padding:6px;
+  border-radius:8px;
+}
+
+.image-aspect-ratio{
+aspect-ratio: 0.9;
+}
+
+b {
+  color: #007bff;
+}
+
+input, textarea {
+  margin: 5px;
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Promo Section */
+.promo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+  background-image: url('https://tse2.mm.bing.net/th?id=OIP.FavnV6rs7tai55JTmei23gHaEo&pid=Api&P=0&h=180');
+  background-size: cover;
+  background-position: center;
+  color: rgb(15, 3, 3);
+}
+
+.promo-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.promo-image img {
+  max-width: 80%;
+  max-height: 100%;
+}
+
+.promo-text {
+  flex: 1;
+  text-align: left;
+  padding: 0 40px;
+}
+
+.promo-text h1 {
+  font-size: 3.0rem;
+}
+
+.promo-text p {
+  font-size: 1.4rem;
+}
+.build-resume-btn {
+  display: inline-flex;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.build-resume-btn:hover {
+  background-color: #0056b3;
+}
+
+.text-field {
+  margin-bottom: 1rem;
+}
+
+.text-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.text-field input {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
